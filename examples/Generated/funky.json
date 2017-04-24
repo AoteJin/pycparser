@@ -1,0 +1,358 @@
+{
+    "_nodetype": "FileAST",
+    "coord": null,
+    "ext": [
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Return",
+                        "coord": "c_files/funky.c:3:5",
+                        "expr": {
+                            "_nodetype": "Constant",
+                            "coord": "c_files/funky.c:3:12",
+                            "type": "char",
+                            "value": "'1'"
+                        }
+                    }
+                ],
+                "coord": "c_files/funky.c:2:1"
+            },
+            "coord": "c_files/funky.c:1:6",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "c_files/funky.c:1:6",
+                "funcspec": [],
+                "init": null,
+                "name": "foo",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "c_files/funky.c:0:1",
+                        "params": [
+                            {
+                                "_nodetype": "Typename",
+                                "coord": "c_files/funky.c:0:1",
+                                "name": null,
+                                "quals": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": null,
+                                    "declname": null,
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "c_files/funky.c:1:10",
+                                        "names": [
+                                            "void"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "c_files/funky.c:1:6",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "c_files/funky.c:1:6",
+                        "declname": "foo",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "c_files/funky.c:1:1",
+                            "names": [
+                                "char"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "c_files/funky.c:8:10",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "FuncCall",
+                            "args": null,
+                            "coord": "c_files/funky.c:8:14",
+                            "name": {
+                                "_nodetype": "ID",
+                                "coord": "c_files/funky.c:8:14",
+                                "name": "foo"
+                            }
+                        },
+                        "name": "o",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "c_files/funky.c:8:10",
+                            "declname": "o",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "c_files/funky.c:8:5",
+                                "names": [
+                                    "char"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "c_files/funky.c:9:5",
+                        "expr": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "c_files/funky.c:9:12",
+                            "left": {
+                                "_nodetype": "BinaryOp",
+                                "coord": "c_files/funky.c:9:12",
+                                "left": {
+                                    "_nodetype": "Cast",
+                                    "coord": "c_files/funky.c:9:12",
+                                    "expr": {
+                                        "_nodetype": "ArrayRef",
+                                        "coord": "c_files/funky.c:9:18",
+                                        "name": {
+                                            "_nodetype": "ArrayRef",
+                                            "coord": "c_files/funky.c:9:18",
+                                            "name": {
+                                                "_nodetype": "ID",
+                                                "coord": "c_files/funky.c:9:18",
+                                                "name": "matrix"
+                                            },
+                                            "subscript": {
+                                                "_nodetype": "Constant",
+                                                "coord": "c_files/funky.c:9:25",
+                                                "type": "int",
+                                                "value": "1"
+                                            }
+                                        },
+                                        "subscript": {
+                                            "_nodetype": "Constant",
+                                            "coord": "c_files/funky.c:9:28",
+                                            "type": "int",
+                                            "value": "2"
+                                        }
+                                    },
+                                    "to_type": {
+                                        "_nodetype": "Typename",
+                                        "coord": "c_files/funky.c:0:1",
+                                        "name": null,
+                                        "quals": [],
+                                        "type": {
+                                            "_nodetype": "TypeDecl",
+                                            "coord": null,
+                                            "declname": null,
+                                            "quals": [],
+                                            "type": {
+                                                "_nodetype": "IdentifierType",
+                                                "coord": "c_files/funky.c:9:13",
+                                                "names": [
+                                                    "int"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "op": "*",
+                                "right": {
+                                    "_nodetype": "Constant",
+                                    "coord": "c_files/funky.c:9:33",
+                                    "type": "int",
+                                    "value": "5"
+                                }
+                            },
+                            "op": "-",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "c_files/funky.c:9:37",
+                                "name": "paste"
+                            }
+                        }
+                    }
+                ],
+                "coord": "c_files/funky.c:7:1"
+            },
+            "coord": "c_files/funky.c:6:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "c_files/funky.c:6:5",
+                "funcspec": [],
+                "init": null,
+                "name": "maxout_in",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "c_files/funky.c:6:19",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "c_files/funky.c:6:19",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "paste",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "c_files/funky.c:6:19",
+                                    "declname": "paste",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "c_files/funky.c:6:15",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "c_files/funky.c:6:31",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "matrix",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "PtrDecl",
+                                    "coord": "c_files/funky.c:6:31",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "PtrDecl",
+                                        "coord": "c_files/funky.c:6:30",
+                                        "quals": [],
+                                        "type": {
+                                            "_nodetype": "TypeDecl",
+                                            "coord": "c_files/funky.c:6:33",
+                                            "declname": "matrix",
+                                            "quals": [],
+                                            "type": {
+                                                "_nodetype": "IdentifierType",
+                                                "coord": "c_files/funky.c:6:26",
+                                                "names": [
+                                                    "char"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "c_files/funky.c:6:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "c_files/funky.c:6:5",
+                        "declname": "maxout_in",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "c_files/funky.c:6:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "c_files/funky.c:14:14",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "Constant",
+                            "coord": "c_files/funky.c:14:24",
+                            "type": "string",
+                            "value": "\"a multi\""
+                        },
+                        "name": "multi",
+                        "quals": [],
+                        "storage": [
+                            "auto"
+                        ],
+                        "type": {
+                            "_nodetype": "PtrDecl",
+                            "coord": "c_files/funky.c:14:14",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "TypeDecl",
+                                "coord": "c_files/funky.c:14:16",
+                                "declname": "multi",
+                                "quals": [],
+                                "type": {
+                                    "_nodetype": "IdentifierType",
+                                    "coord": "c_files/funky.c:14:10",
+                                    "names": [
+                                        "char"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "coord": "c_files/funky.c:13:1"
+            },
+            "coord": "c_files/funky.c:12:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "c_files/funky.c:12:5",
+                "funcspec": [],
+                "init": null,
+                "name": "main",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": null,
+                    "coord": "c_files/funky.c:12:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "c_files/funky.c:12:5",
+                        "declname": "main",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "c_files/funky.c:12:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        }
+    ]
+}
